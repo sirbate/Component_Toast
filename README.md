@@ -59,16 +59,37 @@
 
 <h2>🚀 Instalación</h2>
 
-<h3>1. Importar el componente</h3>
+<h3>📁 Opción 1: Importar desde archivo</h3>
 <ol>
-  <li>Descarga el archivo <code>.msapp</code> o componente <code>.msc</code> desde la carpeta <code>/component/</code>.</li>
+  <li>Descarga el archivo <code>.msapp</code> o <code>.mscx</code> desde la carpeta <code>/component/</code>.</li>
   <li>En Power Apps Studio, entra al editor de tu app.</li>
   <li>Ve a <strong>Componentes &gt; + Nuevo componente &gt; Importar componente</strong>.</li>
-  <li>Selecciona el archivo y ¡listo!</li>
+  <li>Selecciona el archivo descargado y úsalo en tus pantallas.</li>
 </ol>
 
-<h3>2. Usar el componente</h3>
-<p>Agrega el componente a una pantalla y usa esta fórmula de ejemplo:</p>
+<h3>📄 Opción 2: Definir vía YAML (para documentación/configuración externa)</h3>
+
+<p>Si estás documentando o automatizando este componente vía YAML (por ejemplo, en Docusaurus o GitHub Pages), puedes usar un bloque así para mostrar ejemplos:</p>
+
+<pre><code>toast_component:
+  nombre: ToastComponent
+  descripcion: Componente de notificaciones tipo toast para Power Apps
+  uso: |
+    ```powerapps
+    Toast.ShowToast("Guardado correctamente", "Success", "Éxito", 3)
+    ```
+  parametros:
+    - mensaje
+    - tipo
+    - titulo
+    - duracion_segundos
+</code></pre>
+
+<p><strong>Esto mostrará el bloque de código en formato visual dentro de tu documentación.</strong></p>
+
+<hr>
+
+<h2>📦 Ejemplo de uso del componente</h2>
 
 <pre><code>Toast.ShowToast("Guardado correctamente", "Success", "Éxito", 3)</code></pre>
 
@@ -80,8 +101,8 @@
 <h2>🧠 Notas Técnicas</h2>
 <ul>
   <li>El componente usa una colección interna para controlar el estado de visibilidad.</li>
-  <li>Animaciones creadas con <code>Transition</code> + <code>Visible</code>.</li>
-  <li>Colores definidos en variables globales para fácil edición:
+  <li>Animaciones creadas con <code>Transition</code> y <code>Visible</code>.</li>
+  <li>Colores definidos en variables globales:
     <ul>
       <li><code>varToastSuccessColor</code></li>
       <li><code>varToastErrorColor</code></li>
