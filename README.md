@@ -319,7 +319,6 @@ ComponentDefinitions:
 
 </code></pre>
 
-<p><strong>Esto mostrará el bloque de código en formato visual dentro de tu documentación.</strong></p>
 
 <hr>
 
