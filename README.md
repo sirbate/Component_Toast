@@ -356,6 +356,9 @@ ComponentDefinitions:
 
 <hr>
 
-<h2>🪪 Licencia</h2>
-<p><strong>MIT</strong> — puedes usar, modificar y compartir libremente este componente.<br>
-¡Dame crédito si te sirvió! 😊</p>
+<h2 id="licencia">📄 Licencia</h2>
+
+<p>
+  MIT — Puedes usar, modificar y compartir libremente esta herramienta.<br>
+  ¡Una estrella ⭐ ayuda mucho si te fue útil!
+</p>
