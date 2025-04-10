@@ -7,6 +7,12 @@
   Este componente permite mostrar mensajes tipo <strong>toast</strong> con estilo, color y comportamiento definidos por el usuario.
 </blockquote>
 
+<div align="center">
+  <a href="https://github.com/sirbate/Component_Toast"  target="_blank">
+    <img src="assets/ToastIcon.png" width="717" height="527" alt="Toast notification for Power Apps" />  
+  </a>
+</div>
+
 <hr>
 
 <h2>⚙️ Funcionalidades</h2>
